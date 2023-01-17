@@ -18,8 +18,8 @@ class Game:
         # icon = pygame.image.load('game_icon\\window_icon.png') # TODO: game icon
         # pygame.display.set_icon(icon) # TODO: game icon
     def run(self):
-        self.window.fill('black')
         while True:
+            self.window.fill('black')
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
